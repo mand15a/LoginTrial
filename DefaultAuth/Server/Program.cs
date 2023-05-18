@@ -26,9 +26,6 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-//blazor service register
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
