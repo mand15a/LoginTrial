@@ -1,0 +1,82 @@
+﻿@page "/humanresource"
+
+<ul class="nav nav-tabs">
+    @foreach (var item in types)
+    {
+        <li class="nav-item">
+            <a class="nav-link @(selected == Array.IndexOf(types, item) ? "active" : "")" @onclick="() => selected = Array.IndexOf(types, item)">@GetTabName(item)</a>
+        </li>
+    }
+</ul>
+
+<div class="tab-content">
+    @foreach (var item in types)
+    {
+        <div class="tab-pane fade @(selected == Array.IndexOf(types, item) ? "show active" : "")">
+            @if (selected == Array.IndexOf(types, item))
+            {
+                <div>
+                    @if (item == typeof(PersonalDetails))
+                    {
+                        <PersonalDetails />
+                    }
+                    else if (item == typeof(EmployeeDepartment))
+                    {
+                        <EmployeeDepartment />
+                    }
+                    else if (item == typeof(Department))
+                    {
+                        <Department />
+                    }
+                    else if (item == typeof(Shift))
+                    {
+                        <Shift />
+                    }
+                    else if (item == typeof(PayHistory))
+                    {
+                        <PayHistory />
+                    }
+                    else if (item == typeof(Address))
+                    {
+                        <Address />
+                    }
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    int selected;
+    Type[] types = { typeof(PersonalDetails), typeof(EmployeeDepartment), typeof(Department), typeof(Shift), typeof(PayHistory), typeof(Address) };
+
+    string GetTabName(Type type)
+    {
+        if (type == typeof(PersonalDetails))
+        {
+            return "Personal Details";
+        }
+        else if (type == typeof(EmployeeDepartment))
+        {
+            return "Employee Department";
+        }
+        else if (type == typeof(Department))
+        {
+            return "Department";
+        }
+        else if (type == typeof(Shift))
+        {
+            return "Shift";
+        }
+        else if (type == typeof(PayHistory))
+        {
+            return "Pay History";
+        }
+        else if (type == typeof(Address))
+        {
+            return "Address";
+        }
+
+        return string.Empty;
+    }
+}

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultAuth.Server", "DefaultAuth\Server\DefaultAuth.Server.csproj", "{E6D7A306-3185-4047-A8A7-7EA15FEC37D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultAuth.Server", "DefaultAuth\Server\DefaultAuth.Server.csproj", "{E6D7A306-3185-4047-A8A7-7EA15FEC37D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultAuth.Client", "DefaultAuth\Client\DefaultAuth.Client.csproj", "{8479CBC1-6265-482E-B17B-A7D6C01175E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultAuth.Client", "DefaultAuth\Client\DefaultAuth.Client.csproj", "{8479CBC1-6265-482E-B17B-A7D6C01175E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultAuth.Shared", "DefaultAuth\Shared\DefaultAuth.Shared.csproj", "{77300561-1167-45C7-B68D-FE01B5BEE82C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultAuth.Shared", "DefaultAuth\Shared\DefaultAuth.Shared.csproj", "{77300561-1167-45C7-B68D-FE01B5BEE82C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
